@@ -1,0 +1,338 @@
+{
+	"Creates a #if directive and a #endif directive":{
+		"prefix": "#if",
+		"body": [
+			"#if ${1:true}\r\n",
+			"#endif"
+			],
+		"description": "Creates a #if directive and a #endif directive"
+	},
+	"Creates a #region directive and a #endregion directive":{
+		"prefix": "#region",
+		"body": [
+			"#region ${1:MyRegion}\r\n",
+			"#endregion"
+			],
+		"description": "Creates a #region directive and a #endregion directive"
+	},
+	"Creates a destructor for the containing class":{
+		"prefix": "~",
+		"body": [
+			"~${1:Program}()",
+			"{\r\n",
+			"}"
+			],
+		"description": "Creates a destructor for the containing class"
+	},
+	"Creates a class declaration":{
+		"prefix": "class",
+		"body": [
+			"public class ${1:MyClass}",
+			"{",
+			"\t$0",
+			"}"
+			],
+		"description": "Creates a class declaration"
+	},
+	"Creates a constructor for the containing class":{
+		"prefix": "ctor",
+		"body": [
+			"public ${1:MyClass}()",
+			"{",
+			"\t$0",
+			"}"
+			],
+		"description": "Creates a constructor for the containing class"
+	},
+	"Creates a call to WriteLine":{
+		"prefix": "cw",
+		"body": [
+			"Console.WriteLine($0);"
+			],
+		"description": "Creates a call to WriteLine"
+	},
+	"Creates a do while loop":{
+		"prefix": "do",
+		"body": [
+			"do",
+			"{",
+			"\t$0",
+			"} while (${1:true});"
+			],
+		"description": "Creates a do while loop"
+	},
+	"Creates an else block":{
+		"prefix": "else",
+		"body": [
+			"else",
+			"{",
+			"\t$0",
+			"}"
+			],
+		"description": "Creates an else block"
+	},
+	"Creates an enum declaration":{
+		"prefix": "enum",
+		"body": [
+			"public enum ${1:MyEnumType}()",
+			"{",
+			"\t$0",
+			"}"
+			],
+		"description": "Creates an enum declaration"
+	},
+	"Creates a declaration for a class that derives from an exception (Exception by default)":{
+		"prefix": "exception",
+		"body": [
+			"using System.Runtime.Serialization;\r\n",
+			"[Serializable]",
+			"public class ${1:My}Exception : Exception",
+			"{",
+			"\tpublic $1Exception() { }",
+			"\tpublic $1Exception(string message) : base(message) { }",
+			"\tpublic $1Exception(string message, Exception inner) : base(message, inner) { }",
+			"\tprotected $1Exception(SerializationInfo info, StreamingContext context) : base(info, context) { }",
+			"}"
+			],
+		"description": "Creates a declaration for a class that derives from an exception (Exception by default)"
+	},
+	"Creates a for loop":{
+		"prefix": "for",
+		"body": [
+			"for (${1:int} ${2:i} = 0; $2 < ${3:length}; $2++)",
+			"{",
+			"\t$0",
+			"}"
+			],
+		"description": "Creates a for loop"
+	},
+	"Creates a foreach loop":{
+		"prefix": "foreach",
+		"body": [
+			"foreach (${1:var} ${2:item} in ${3:collection})",
+			"{",
+			"\t$0",
+			"}"
+			],
+		"description": "Creates a foreach loop"
+	},
+	"Creates a for loop that decrements the loop variable after each iteration":{
+		"prefix": "forr",
+		"body": [
+			"for (${1:int} ${2:i} = ${3:length} - 1; $2 >= 0; $2--)",
+			"{",
+			"\t$0",
+			"}"
+			],
+		"description": "Creates a for loop that decrements the loop variable after each iteration"
+	},
+	"Creates an if block":{
+		"prefix": "if",
+		"body": [
+			"if (${1:true})",
+			"{",
+			"\t$0",
+			"}"
+			],
+		"description": "Creates an if block"
+	},
+	"Creates an indexer declaration":{
+		"prefix": "indexer",
+		"body": [
+			"${1:public} ${2:object} this[${3:int} index]",
+			"{",
+			"\tget { /* return the specified index here */ }",
+			"\tset { /* set the specified index to value here */ }",
+			"}"
+			],
+		"description": "Creates an indexer declaration"
+	},
+	"Creates an interface declaration":{
+		"prefix": "interface",
+		"body": [
+			"${1:public} interface I${2:Interface}",
+			"{",
+			"\t$0",
+			"}"
+			],
+		"description": "Creates an interface declaration"
+	},
+	"Creates a block that safely invokes an event":{
+		"prefix": "invoke",
+		"body": [
+			"${1:EventHandler} ${2:temp} = ${3:My}Event;",
+			"if ($2 != null)",
+			"{",
+			"\t${2:temp}();",
+			"}"
+			],
+		"description": "Creates a block that safely invokes an event"
+	},
+	"Creates an iterator":{
+		"prefix": "iterator",
+		"body": [
+			"public IEnumerator<${1:ElementType}> ${2:GetEnumerator}()",
+			"{",
+			"\tthrow new NotImplementedException();",
+			"\t$0",
+			"\tyield return default($1);",
+			"}"
+			],
+		"description": "Creates an iterator"
+	},
+	"Creates a lock block":{
+		"prefix": "lock",
+		"body": [
+			"lock (${1:this})",
+			"{",
+			"\t$0",
+			"}"
+			],
+		"description": "Creates a lock block"
+	},
+	"Creates a namespace declaration":{
+		"prefix": "namespace",
+		"body": [
+			"namespace ${1:MyNamespace}",
+			"{",
+			"\t$0",
+			"}"
+			],
+		"description": "Creates a namespace declaration"
+	},
+	"Creates an auto-implemented property declaration": {
+		"prefix": "prop",
+		"body": [
+			"public ${1:string} ${2:MyProperty} { get; set; }",
+			"$0"
+			],
+		"description": "Creates an auto-implemented property declaration"
+	},
+	"Creates a property declaration with get and set accessors": {
+		"prefix": "propfull",
+		"body": [
+			"private ${1:string} ${2:_myVar};\r\n",
+
+			"public $1 ${3:MyProperty}",
+			"{",
+    		"\tget { return $2;}",
+    		"\tset { $2 = value;}",
+			"}",
+			"$0"
+			],
+		"description": "Creates a property declaration with get and set accessors"
+	},
+	"Creates a read-only auto-implemented property with a private set accessor": {
+		"prefix": "propg",
+		"body": [
+			"public ${1:string} ${2:MyProperty} { get; private set; }",
+			"$0"
+			],
+		"description": "Creates a read-only auto-implemented property with a private set accessor"
+	},
+	"Creates a static int Main method declaration": {
+		"prefix": "sim",
+		"body": [
+			"public static ${1:int} Main(${2:string}[] ${3:args})",
+			"{",
+			"\t$0",
+			"\treturn 0;",
+			"}"
+			],
+		"description": "Creates a static int Main method declaration"
+	},
+	"Creates a struct declaration":{
+		"prefix": "struct",
+		"body": [
+			"public struct ${1:MyStruct}",
+			"{",
+			"\t$0",
+			"}"
+			],
+		"description": "Creates a struct declaration"
+	},
+	"Creates a static void Main method declaration": {
+		"prefix": "svm",
+		"body": [
+			"public static void Main(${1:string}[] ${2:args})",
+			"{",
+			"\t$0",
+			"}"
+			],
+		"description": "Creates a static void Main method declaration"
+	},
+	"Creates a switch block": {
+		"prefix": "switch",
+		"body": [
+			"switch (${1:switch_on})",
+			"{",
+			"\t$0",
+			"\tdefault:",
+			"\t\tbreak;",
+			"}"
+			],
+		"description": "Creates a switch block"
+	},
+	"Creates a try-catch block": {
+		"prefix": "try",
+		"body": [
+			"try",
+			"{",
+			"\t$0",
+			"}",
+			"catch (${1:Exception} ${2:ex})",
+			"{\r\n",
+			"\tthrow;",
+			"}"
+			],
+		"description": "Creates a try-catch block"
+	},
+	"Creates a try-finally block": {
+		"prefix": "tryf",
+		"body": [
+			"try",
+			"{",
+			"\t$0",
+			"}",
+			"catch (${1:Exception} ${2:ex})",
+			"{\r\n",
+			"\tthrow;",
+			"}",
+			"finally",
+			"{\r\n",
+			"}"
+			],
+		"description": "Creates a try-finally block"
+	},
+	"Creates a using directive": {
+		"prefix": "using",
+		"body": [
+			"using (${1:resource})",
+			"{",
+			"\t$0",
+			"}"
+			],
+		"description": "Creates a using directive"
+	},
+	"Creates a while loop":{
+		"prefix": "while",
+		"body": [
+			"while (${1:true})",
+			"{",
+			"\t$0",
+			"}"
+			],
+		"description": "Creates a while loop"
+	},
+	"General output to console":{
+		"prefix": "con_general_output",
+		"body": [
+			"Console.WriteLine('Console app started');\r\n",
+			"$0",
+			"Console.WriteLine('Console app finished');",
+			"Console.ReadLine();"
+		],
+		"description": "General output to console"
+	}
+
+}
