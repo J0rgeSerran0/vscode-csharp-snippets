@@ -3,6 +3,7 @@
 ![alt text](images/vscode-csharp-snippets.png "C# Snippets")
 
 This extension for Visual Studio Code adds snippets for C#.
+You can find this extension in the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=jorgeserrano.vscode-csharp-snippets).
 
 See the [CHANGELOG](CHANGELOG.md) for the latest changes included.
 
