@@ -1,5 +1,7 @@
 # C# Snippets for Visual Studio Code
 
+![alt text](https://github.com/J0rgeSerran0/vscode-csharp-snippets/tree/master/images/vscode-csharp-snippets.png "C# Snippets")
+
 This extension for Visual Studio Code adds snippets for C#.
 
 See the [CHANGELOG](CHANGELOG.md) for the latest changes included.
