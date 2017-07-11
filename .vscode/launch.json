@@ -1,6 +1,5 @@
-// A launch configuration that launches the extension inside a new window
 {
-    "version": "0.1.1",
+    "version": "0.1.2",
     "configurations": [
         {
             "name": "Launch Extension",

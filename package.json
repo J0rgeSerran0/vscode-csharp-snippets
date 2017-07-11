@@ -4,7 +4,7 @@
     "displayName": "C# Snippets",
     "description": "C# Snippets for Visual Studio Code",
     "icon": "images/vscode-csharp-snippets.png",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "author": "Jorge Serrano",
     "license": "SEE LICENSE IN LICENSE.md",
     "repository": {

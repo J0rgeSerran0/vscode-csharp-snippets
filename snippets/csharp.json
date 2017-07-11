@@ -1,4 +1,21 @@
 {
+	"Creates a HelloWorld sample":{
+		"prefix": "#helloworld",
+		"body": [
+			"using System;\r\n",
+			"namespace ConsoleApp",
+			"{",
+			"\tpublic class Program",
+			"\t{",
+			"\t\tpublic static void Main(string[] args)",
+			"\t\t{",
+			"\t\t\tConsole.WriteLine(\"Hello World!\");",
+			"\t\t}",
+			"\t}",
+			"}"
+			],
+		"description": "Creates a HelloWorld sample"
+	},
 	"Creates a #if directive and a #endif directive":{
 		"prefix": "#if",
 		"body": [
@@ -10,7 +27,8 @@
 	"Creates a #region directive and a #endregion directive":{
 		"prefix": "#region",
 		"body": [
-			"#region ${1:MyRegion}\r\n",
+			"#region ${1:MyRegion}",
+			"\t$0",
 			"#endregion"
 			],
 		"description": "Creates a #region directive and a #endregion directive"
@@ -19,10 +37,29 @@
 		"prefix": "~",
 		"body": [
 			"~${1:Program}()",
-			"{\r\n",
+			"{",
+			"\t$0",
 			"}"
 			],
 		"description": "Creates a destructor for the containing class"
+	},
+	"Creates a call to Clear":{
+		"prefix": "cclear",
+		"body": [
+			"Console.Clear();",
+			"$0"
+		],
+		"description": "Creates a call to Clear"
+	},
+	"General output to console":{
+		"prefix": "cgo",
+		"body": [
+			"Console.WriteLine(\"Console app started\");\r\n",
+			"$0",
+			"Console.WriteLine(\"Press any key to exit...\");",
+			"Console.ReadKey(true);"
+		],
+		"description": "General output to console"
 	},
 	"Creates a class declaration":{
 		"prefix": "class",
@@ -33,6 +70,22 @@
 			"}"
 			],
 		"description": "Creates a class declaration"
+	},
+	"Creates a constant":{
+		"prefix": "const",
+		"body": [
+			"${1:public} const ${2:string} ${3:CONSTANT_NAME} = \"${4:value}\";",
+			"$0"
+			],
+		"description": "Creates a constant"
+	},
+	"Creates a call to ReadLine":{
+		"prefix": "cr",
+		"body": [
+			"Console.ReadLine();",
+			"$0"
+			],
+		"description": "Creates a call to ReadLine"
 	},
 	"Creates a constructor for the containing class":{
 		"prefix": "ctor",
@@ -74,7 +127,7 @@
 	"Creates an enum declaration":{
 		"prefix": "enum",
 		"body": [
-			"public enum ${1:MyEnumType}()",
+			"public enum ${1:MyEnum}Type()",
 			"{",
 			"\t$0",
 			"}"
@@ -230,6 +283,27 @@
 			],
 		"description": "Creates a read-only auto-implemented property with a private set accessor"
 	},
+	"Creates a public string method declaration": {
+		"prefix": "pum",
+		"body": [
+			"public ${1:string} ${2:Method}(${3:string} ${4:parameter})",
+			"{",
+			"\t$0",
+			"\treturn System.NotImplementedException;",
+			"}"
+			],
+		"description": "Creates a public string method declaration"
+	},
+	"Creates a public void method declaration": {
+		"prefix": "pvm",
+		"body": [
+			"public void ${1:Method}(${2:string} ${3:parameter})",
+			"{",
+			"\t$0",
+			"}"
+			],
+		"description": "Creates a public void method declaration"
+	},
 	"Creates a static int Main method declaration": {
 		"prefix": "sim",
 		"body": [
@@ -280,7 +354,7 @@
 			"{",
 			"\t$0",
 			"}",
-			"catch (${1:Exception} ${2:ex})",
+			"catch (${1:}Exception ${2:ex})",
 			"{\r\n",
 			"\tthrow;",
 			"}"
@@ -294,7 +368,7 @@
 			"{",
 			"\t$0",
 			"}",
-			"catch (${1:Exception} ${2:ex})",
+			"catch (${1:}Exception ${2:ex})",
 			"{\r\n",
 			"\tthrow;",
 			"}",
@@ -324,15 +398,28 @@
 			],
 		"description": "Creates a while loop"
 	},
-	"General output to console":{
-		"prefix": "con_general_output",
+	"csproj Generator for .NET Core 1.0":{
+		"prefix": "csproj_1.0",
 		"body": [
-			"Console.WriteLine('Console app started');\r\n",
-			"$0",
-			"Console.WriteLine('Console app finished');",
-			"Console.ReadLine();"
+			"<Project Sdk=\"Microsoft.NET.Sdk\">",
+			"\t<PropertyGroup>",
+			"\t\t<OutputType>Exe</OutputType>",
+			"\t\t<TargetFramework>netcoreapp1.0</TargetFramework>",
+			"\t</PropertyGroup>",
+			"</Project>"
 		],
-		"description": "General output to console"
+		"description": "csproj Generator for .NET Core 1.0"
+	},
+	"csproj Generator for .NET Core 2.0":{
+		"prefix": "csproj_2.0",
+		"body": [
+			"<Project Sdk=\"Microsoft.NET.Sdk\">",
+			"\t<PropertyGroup>",
+			"\t\t<OutputType>Exe</OutputType>",
+			"\t\t<TargetFramework>netcoreapp2.0</TargetFramework>",
+			"\t</PropertyGroup>",
+			"</Project>"
+		],
+		"description": "csproj Generator for .NET Core 2.0"
 	}
-
 }

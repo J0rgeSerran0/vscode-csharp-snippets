@@ -1,6 +1,6 @@
 # C# Snippets for Visual Studio Code
 
-![alt text](images/vscode-csharp-snippets.png "C# Snippets")
+![alt text](https://github.com/J0rgeSerran0/vscode-csharp-snippets/raw/master/images/vscode-csharp-snippets.png "C# Snippets")
 
 This extension for Visual Studio Code adds snippets for C#.
 
@@ -15,12 +15,21 @@ Type part of a snippet, press `tab`, and the snippet unfolds.
 
 If you have problems to see the snippets, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (OSX).
 
+(see the [TUTORIALS](TUTORIALS.md) to know more)
+
 ### C# general snippets
 ```csharp
+#helloworld
 #if
 #region
 ~
+cclear
+cgo
 class
+const
+cr
+csproj_1.0
+csproj_2.0
 ctor
 cw
 do
@@ -40,6 +49,8 @@ namespace
 prop
 propfull
 propg
+pum
+pvm
 sim
 struct
 svm
@@ -48,7 +59,6 @@ try
 tryf
 using
 while
-con_general_output
 ```
 
 ## Instalation
