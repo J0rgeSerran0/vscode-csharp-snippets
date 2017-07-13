@@ -26,9 +26,12 @@ If you have problems to see the snippets, press `Ctrl`+`Space` (Windows, Linux) 
 cclear
 cgo
 class
+classa
+classd
 const
 cr
 csproj_1.0
+csproj_1.1
 csproj_2.0
 ctor
 cw
@@ -44,6 +47,8 @@ indexer
 interface
 invoke
 iterator
+linq_distinct
+linq_where
 lock
 namespace
 prop
@@ -52,6 +57,7 @@ propg
 pum
 pvm
 sim
+singleton
 struct
 svm
 switch
@@ -61,9 +67,17 @@ using
 while
 ```
 
+### ASP.NET Core C# snippets
+```csharp
+dnac_csproj_2.0
+dnac_#helloworld_WebApp
+dnac_#helloworld_Startup
+```
+
+
 ## Instalation
 
-1. Install Visual Studio Code 1.10.0 or higher
+1. Install Visual Studio Code 1.5.0 or higher
 2. Launch Visual Studio Code
 3. From the command palette `Ctrl`-`Shift`-`P` (Windows, Linux) or `Cmd`-`Shift`-`P` (OSX)
 4. Select `Install Extension`

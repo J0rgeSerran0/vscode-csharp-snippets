@@ -71,6 +71,32 @@
 			],
 		"description": "Creates a class declaration"
 	},
+	"Creates an abstract class declaration":{
+		"prefix": "classa",
+		"body": [
+			"public abstract class ${1:MyClass}",
+			"{",
+			"\t$0",
+			"}"
+			],
+		"description": "Creates an abstract class declaration"
+	},
+	"Creates a disposable class":{
+		"prefix": "classd",
+		"body": [
+			"public class ${1:MyClass} : IDisposable",
+			"{",
+			"",
+			"\tpublic void Dispose()",
+			"\t{",
+			"\t\tGC.SuppressFinalize(this);",
+			"\t}",
+			"",
+			"\t$0",
+			"}"
+			],
+		"description": "Creates a disposable class"
+	},
 	"Creates a constant":{
 		"prefix": "const",
 		"body": [
@@ -233,6 +259,23 @@
 			],
 		"description": "Creates an iterator"
 	},
+	"Creates a LINQ Distinct sentence":{
+		"prefix": "linq_distinct",
+		"body": [
+			"${1:var} ${2:data} = (from ${3:item} in ${4:collection}",
+			"\t\t\tselect $3).Distinct()"
+			],
+		"description": "Creates a LINQ Distinct sentence"
+	},
+	"Creates a LINQ Where sentence":{
+		"prefix": "linq_where",
+		"body": [
+			"${1:var} ${2:data} = from ${3:item} in ${4:collection}",
+			"\t\t\twhere $3.${5:FieldName}.${6:Contains}(\"${7:Text}\")",
+			"\t\t\tselect $3;"
+			],
+		"description": "Creates a LINQ Where sentence"
+	},
 	"Creates a lock block":{
 		"prefix": "lock",
 		"body": [
@@ -314,6 +357,34 @@
 			"}"
 			],
 		"description": "Creates a static int Main method declaration"
+	},
+	"Creates a singleton class": {
+		"prefix": "singleton",
+		"body": [
+			"public class ${1:MyClass}",
+			"{",
+			"\tprivate static volatile I${2:MyObject} instance;",
+			"\tprivate static Object syncRootObject = new Object();",
+			"",
+			"\tpublic static I${2} Instance",
+			"\t{",
+			"\t\tget",
+			"\t\t{",
+			"\t\t\tif (instance == null)",
+			"\t\t\t{",
+			"\t\t\t\tlock (syncRooObject)",
+			"\t\t\t\t{",
+			"\t\t\t\t\tif (instance == null)",
+			"\t\t\t\t\t{",
+			"\t\t\t\t\t\tinstance = new $0${3:MyObject}();",
+			"\t\t\t\t\t}",
+			"\t\t\t\t}",
+			"\t\t\t}",
+			"\t\t}",
+			"\t}",
+			"}"
+			],
+		"description": "Creates a singleton class"
 	},
 	"Creates a struct declaration":{
 		"prefix": "struct",
@@ -410,6 +481,18 @@
 		],
 		"description": "csproj Generator for .NET Core 1.0"
 	},
+	"csproj Generator for .NET Core 1.1":{
+		"prefix": "csproj_1.1",
+		"body": [
+			"<Project Sdk=\"Microsoft.NET.Sdk\">",
+			"\t<PropertyGroup>",
+			"\t\t<OutputType>Exe</OutputType>",
+			"\t\t<TargetFramework>netcoreapp1.1</TargetFramework>",
+			"\t</PropertyGroup>",
+			"</Project>"
+		],
+		"description": "csproj Generator for .NET Core 1.1"
+	},
 	"csproj Generator for .NET Core 2.0":{
 		"prefix": "csproj_2.0",
 		"body": [
@@ -421,5 +504,88 @@
 			"</Project>"
 		],
 		"description": "csproj Generator for .NET Core 2.0"
+	},
+	"ASP.NET Core 2.0 Preview2 Final csproj Generator":{
+		"prefix": "dnac_csproj_2.0",
+		"body": [
+			"<Project Sdk=\"Microsoft.NET.Sdk.Web\">",
+			"\t<PropertyGroup>",
+			"\t\t<TargetFramework>netcoreapp2.0</TargetFramework>",
+			"\t</PropertyGroup>",
+			"\t<ItemGroup>",
+			"\t\t<Folder Include=\"wwwroot\\\" />",
+			"\t</ItemGroup>",
+			"\t<ItemGroup>",
+			"\t\t<PackageReference Include=\"Microsoft.AspNetCore.All\" Version=\"2.0.0-preview2-final\" />",
+			"\t</ItemGroup>",
+			"</Project>"
+		],
+		"description": "ASP.NET Core 2.0 Preview2 Final csproj Generator"
+	},
+	"ASP.NET Core - Creates a HelloWorld sample - Startup":{
+		"prefix": "dnac_#helloworld_Startup",
+		"body": [
+			"using System;",
+			"using System.Collections.Generic;",
+			"using System.Linq;",
+			"using System.Threading.Tasks;",
+			"using Microsoft.AspNetCore.Builder;",
+			"using Microsoft.AspNetCore.Hosting;",
+			"using Microsoft.AspNetCore.Http;",
+			"using Microsoft.Extensions.DependencyInjection;\r\n",
+			"namespace WebApp",
+			"{",
+			"\tpublic class Startup",
+			"\t{",
+			"\t\tpublic void ConfigureServices(IServiceCollection services)",
+			"\t\t{",
+			"\t\t}",
+			"",
+			"\t\tpublic void Configure(IApplicationBuilder app, IHostingEnvironment env)",
+			"\t\t{",
+			"\t\t\tif (env.IsDevelopment())",
+			"\t\t\t{",
+			"\t\t\t\tapp.UseDeveloperExceptionPage();",
+			"\t\t\t}",
+			"",
+			"\t\t\tapp.Run(async (context) =>",
+			"\t\t\t{",
+			"\t\t\t\tawait context.Response.WriteAsync(\"Hello World!\");",
+			"\t\t\t});",
+			"\t\t}",
+			"\t}",
+			"}"
+			],
+		"description": "ASP.NET Core - Creates a HelloWorld sample - Startup"
+	},
+	"ASP.NET Core - Creates a HelloWorld sample - WebApp":{
+		"prefix": "dnac_#helloworld_WebApp",
+		"body": [
+			"using System;",
+			"using System.Collections.Generic;",
+			"using System.IO;",
+			"using System.Linq;",
+			"using System.Threading.Tasks;",
+			"using Microsoft.AspNetCore;",
+			"using Microsoft.AspNetCore.Hosting;",
+			"using Microsoft.Extensions.Configuration;",
+			"using Microsoft.Extensions.Logging;\r\n",
+			"namespace WebApp",
+			"{",
+			"\tpublic class Program",
+			"\t{",
+			"\t\tpublic static void Main(string[] args)",
+			"\t\t{",
+			"\t\t\tBuildWebHost(args).Run();",
+			"\t\t}",
+			"",
+			"\t\tpublic static IWebHost BuildWebHost(string[] args) =>",
+			"\t\tWebHost.CreateDefaultBuilder(args)",
+			"\t\t\t.UseStartup<Startup>()",
+			"\t\t\t.Build();",
+			"\t}",
+			"}"
+			],
+		"description": "ASP.NET Core - Creates a HelloWorld sample - WebApp"
 	}
 }

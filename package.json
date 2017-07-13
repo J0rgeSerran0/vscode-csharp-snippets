@@ -4,7 +4,7 @@
     "displayName": "C# Snippets",
     "description": "C# Snippets for Visual Studio Code",
     "icon": "images/vscode-csharp-snippets.png",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "author": "Jorge Serrano",
     "license": "SEE LICENSE IN LICENSE.md",
     "repository": {
@@ -22,8 +22,14 @@
         "Languages",
         "Snippets"
     ],
+    "contributors": [
+        {
+            "name": "Jorge Serrano",
+            "url": "http://geeks.ms/Jorge/"
+        }
+    ],
     "engines": {
-        "vscode": "^1.10.0"
+        "vscode": "^1.5.0"
     },
     "contributes": {
         "snippets": [

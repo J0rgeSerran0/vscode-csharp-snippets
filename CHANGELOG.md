@@ -4,6 +4,32 @@
 * All notable changes to the "vscode-csharp-snippets" extension will be documented in this file.
 
 
+## [0.1.3] (2017-07-13)
+
+Included a new section with C# Snippets for ASP.NET Core.
+
+```
+General C# Snippets
+```
+* New snippets
+
+  - `[classa]` :: Creates an abstract class declaration
+  - `[classd]` :: Creates a disposable class
+  - `[csproj_1.1]` :: Creates the content of the csproj file for .NET Core 1.1
+  - `[linq_distinct]` :: Creates a LINQ Distinct sentence
+  - `[linq_where]` :: Creates a LINQ Where sentence
+  - `[singleton]` :: Creates a singleton class
+
+```
+ASP.NET Core Snippets
+```
+* New snippets
+
+  - `[dnac_csproj_2.0]` :: ASP.NET Core 2.0 Preview2 Final csproj Generator
+  - `[dnac_#helloworld_WebApp]` :: ASP.NET Core - Creates a HelloWorld sample - WebApp
+  - `[dnac_#helloworld_Startup]` :: ASP.NET Core - Creates a HelloWorld sample - Startup
+
+
 ## [0.1.2] (2017-07-11)
 
 ```
