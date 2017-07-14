@@ -4,6 +4,24 @@
 * All notable changes to the "vscode-csharp-snippets" extension will be documented in this file.
 
 
+## [0.1.4] (2017-07-17)
+
+```
+General C# Snippets
+```
+* New snippets
+
+  - `[guid]` :: Creates a new instance of the Guid structure
+  - `[guidn]` :: Creates as string, a new instance of the Guid structure without hyphens
+
+```
+ASP.NET Core Snippets
+```
+* New snippets
+
+  - `[xxx]` :: XXX
+
+
 ## [0.1.3] (2017-07-13)
 
 Included a new section with C# Snippets for ASP.NET Core.

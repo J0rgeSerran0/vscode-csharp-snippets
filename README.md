@@ -42,6 +42,8 @@ exception
 for
 foreach
 forr
+guid
+guidn
 if
 indexer
 interface

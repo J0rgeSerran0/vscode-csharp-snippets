@@ -205,6 +205,22 @@
 			],
 		"description": "Creates a for loop that decrements the loop variable after each iteration"
 	},
+	"Creates a new instance of the Guid structure":{
+		"prefix": "guid",
+		"body": [
+			"Guid ${1:guid} = Guid.NewGuid();",
+			"$0"
+			],
+		"description": "Creates a new instance of the Guid structure"
+	},
+	"Creates as string, a new instance of the Guid structure without hyphens":{
+		"prefix": "guidn",
+		"body": [
+			"string ${1:guid} = Guid.NewGuid().ToString(\"N\");",
+			"$0"
+			],
+		"description": "Creates as string, a new instance of the Guid structure without hyphens"
+	},
 	"Creates an if block":{
 		"prefix": "if",
 		"body": [
