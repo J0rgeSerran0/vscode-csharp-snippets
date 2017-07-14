@@ -69,9 +69,9 @@ while
 
 ### ASP.NET Core C# snippets
 ```csharp
-dnac_csproj_2.0
-dnac_#helloworld_WebApp
 dnac_#helloworld_Startup
+dnac_#helloworld_WebApp
+dnac_csproj_2.0
 ```
 
 
