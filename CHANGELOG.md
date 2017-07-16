@@ -4,7 +4,7 @@
 * All notable changes to the "vscode-csharp-snippets" extension will be documented in this file.
 
 
-## [0.1.4] (2017-07-17)
+## [0.1.4] (2017-07-16)
 
 ```
 General C# Snippets
@@ -13,13 +13,16 @@ General C# Snippets
 
   - `[guid]` :: Creates a new instance of the Guid structure
   - `[guidn]` :: Creates as string, a new instance of the Guid structure without hyphens
+  - `[immutable]` :: Creates an immutable object
+  - `[propi]` :: Creates an immutable property
 
 ```
 ASP.NET Core Snippets
 ```
 * New snippets
 
-  - `[xxx]` :: XXX
+  - `[dnac_conf]` :: ASP.NET Core - Creates a way to configure the JSON configuration provider
+  - `[dnac_conf_file]` :: ASP.NET Core - Creates a way to configure the JSON configuration provider with a custom config file
 
 
 ## [0.1.3] (2017-07-13)

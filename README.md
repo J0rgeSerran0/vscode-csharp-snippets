@@ -17,6 +17,9 @@ If you have problems to see the snippets, press `Ctrl`+`Space` (Windows, Linux) 
 
 (see the [TUTORIALS](TUTORIALS.md) to know more)
 
+**IMPORTANT** :: If you use the *C# for Visual Studio Code (powered by OmniSharp)* extension, but you want to see the **C# Snippets** only, [read this post](https://geeks.ms/jorge/2017/07/16/how-to-disable-the-c-snippets-for-the-c-extension-of-visual-studio-code/).
+
+
 ### C# general snippets
 ```csharp
 #helloworld
@@ -45,6 +48,7 @@ forr
 guid
 guidn
 if
+immutable
 indexer
 interface
 invoke
@@ -55,6 +59,7 @@ lock
 namespace
 prop
 propfull
+propi
 propg
 pum
 pvm
@@ -74,6 +79,8 @@ while
 dnac_#helloworld_Startup
 dnac_#helloworld_WebApp
 dnac_csproj_2.0
+dnac_conf
+dnac_conf_file
 ```
 
 
