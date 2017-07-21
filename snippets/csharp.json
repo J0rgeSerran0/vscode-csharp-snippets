@@ -563,21 +563,21 @@
 		],
 		"description": "Xml Comment - <code> Gives you a way to indicate multiple lines as code. Use <c> to indicate that text within a description should be marked as code"
 	},
-	"Xml Comment - <example> Description of the code sample":{
+	"Xml Comment - <example> Lets you specify an example of how to use a method or other library member":{
 		"prefix": "xml_<example>",
 		"body": [
 			"/// <example>",
 			"/// ${1:description}",
 			"/// </example>"
 		],
-		"description": "Xml Comment - <example> Description of the code sample"
+		"description": "Xml Comment - <example> Lets you specify an example of how to use a method or other library member"
 	},
-	"Xml Comment - <exception> Reference to an exception that is available from the current compilation environment":{
+	"Xml Comment - <exception> Lets you specify which exceptions can be thrown":{
 		"prefix": "xml_<exception>",
 		"body": [
 			"/// <exception cref=\"${1:member}\">${2:description}</exception>"
 		],
-		"description": "Xml Comment - <exception> Reference to an exception that is available from the current compilation environment"
+		"description": "Xml Comment - <exception> Lets you specify which exceptions can be thrown"
 	},
 	"Xml Comment - <include> Lets you refer to comments in another file that describe the types and members in your source code":{
 		"prefix": "xml_<include>",
