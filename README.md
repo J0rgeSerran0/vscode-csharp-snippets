@@ -83,6 +83,28 @@ dnac_conf
 dnac_conf_file
 ```
 
+### XML Comments snippets
+```csharp
+xml_<c>
+xml_<code>
+xml_<example>
+xml_<exception>
+xml_<include>
+xml_<list>
+xml_<para>
+xml_<param>
+xml_<paramref>
+xml_<permission>
+xml_<remarks>
+xml_<returns>
+xml_<see>
+xml_<seealso>
+xml_<summary>
+xml_<typeparam>
+xml_<typeparamref>
+xml_<value>
+```
+
 
 ## Instalation
 

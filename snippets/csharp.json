@@ -547,6 +547,145 @@
 		],
 		"description": "csproj Generator for .NET Core 2.0"
 	},
+	"Xml Comment - <c> Gives you a way to indicate that text within a description should be marked as code":{
+		"prefix": "xml_<c>",
+		"body": [
+			"/// <c>${1:text}</c>"
+		],
+		"description": "Xml Comment - <c> Gives you a way to indicate that text within a description should be marked as code"
+	},
+	"Xml Comment - <code> Gives you a way to indicate multiple lines as code. Use <c> to indicate that text within a description should be marked as code":{
+		"prefix": "xml_<code>",
+		"body": [
+			"/// <code>",
+			"/// ${1:content}",
+			"/// </code>"
+		],
+		"description": "Xml Comment - <code> Gives you a way to indicate multiple lines as code. Use <c> to indicate that text within a description should be marked as code"
+	},
+	"Xml Comment - <example> Description of the code sample":{
+		"prefix": "xml_<example>",
+		"body": [
+			"/// <example>",
+			"/// ${1:description}",
+			"/// </example>"
+		],
+		"description": "Xml Comment - <example> Description of the code sample"
+	},
+	"Xml Comment - <exception> Reference to an exception that is available from the current compilation environment":{
+		"prefix": "xml_<exception>",
+		"body": [
+			"/// <exception cref=\"${1:member}\">${2:description}</exception>"
+		],
+		"description": "Xml Comment - <exception> Reference to an exception that is available from the current compilation environment"
+	},
+	"Xml Comment - <include> Lets you refer to comments in another file that describe the types and members in your source code":{
+		"prefix": "xml_<include>",
+		"body": [
+			"/// <include file='${1:filename}' path='${2:tagpath}[@name=\"${3:id}\"]' />"
+		],
+		"description": "Xml Comment - <include> Lets you refer to comments in another file that describe the types and members in your source code"
+	},
+	"Xml Comment - <list> A list or table can have as many <item> blocks as needed":{
+		"prefix": "xml_<list>",
+		"body": [
+			"/// <list type=\"bulltet\">",
+			"///     <listheader>",
+			"///        <term>${1:term}</term>",
+			"///        <description>${2:description}</description>",
+			"///     </listheader>",
+			"///     <item>",
+			"///        <term>${3:term}</term>",
+			"///        <description>${4:description}</description>",
+			"///     </item>",
+			"/// </list>"
+		],
+		"description": "Xml Comment - <list> A list or table can have as many <item> blocks as needed"
+	},
+	"Xml Comment - <para> Is for use inside a tag, such as <summary>, <remarks>, or <returns>, and lets you add structure to the text":{
+		"prefix": "xml_<para>",
+		"body": [
+			"/// <para>${1:content}</para>"
+		],
+		"description": "Xml Comment - <para> Is for use inside a tag, such as <summary>, <remarks>, or <returns>, and lets you add structure to the text"
+	},
+	"Xml Comment - <param> Should be used in the comment for a method declaration to describe one of the parameters for the method":{
+		"prefix": "xml_<param>",
+		"body": [
+			"/// <param name=\"${1:name}\">${2:description}</param>"
+		],
+		"description": "Xml Comment - <param> Should be used in the comment for a method declaration to describe one of the parameters for the method"
+	},
+	"Xml Comment - <paramref> Gives you a way to indicate that a word in the code comments, for example in a <summary> or <remarks> block refers to a parameter":{
+		"prefix": "xml_<paramref>",
+		"body": [
+			"/// <paramref name=\"${1:name}\"/>"
+		],
+		"description": "Xml Comment - <paramref> Gives you a way to indicate that a word in the code comments, for example in a <summary> or <remarks> block refers to a parameter"
+	},
+	"Xml Comment - <permission> Lets you document the access of a member":{
+		"prefix": "xml_<permission>",
+		"body": [
+			"/// <permission cref=\"${1:member}\">${2:description}</permission>"
+		],
+		"description": "Xml Comment - <permission> Lets you document the access of a member"
+	},
+	"Xml Comment - <remarks> Is used to add information about a type, supplementing the information specified with <summary>":{
+		"prefix": "xml_<remarks>",
+		"body": [
+			"/// <remarks>${1:description}</remarks>"
+		],
+		"description": "Xml Comment - <remarks> Is used to add information about a type, supplementing the information specified with <summary>"
+	},
+	"Xml Comment - <returns> Should be used in the comment for a method declaration to describe the return value":{
+		"prefix": "xml_<returns>",
+		"body": [
+			"/// <returns>${1:description}</returns>"
+		],
+		"description": "Xml Comment - <returns> Should be used in the comment for a method declaration to describe the return value"
+	},
+	"Xml Comment - <see> Lets you specify a link from within text. Use <seealso> to indicate that text should be placed in a See Also section":{
+		"prefix": "xml_<see>",
+		"body": [
+			"/// <see cref=\"${1:member}\"/>"
+		],
+		"description": "Xml Comment - <see> Lets you specify a link from within text. Use <seealso> to indicate that text should be placed in a See Also section"
+	},
+	"Xml Comment - <seealso> Lets you specify the text that you might want to appear in a See Also section":{
+		"prefix": "xml_<seealso>",
+		"body": [
+			"/// <seealso cref=\"${1:member}\"/>"
+		],
+		"description": "Xml Comment - <seealso> Lets you specify the text that you might want to appear in a See Also section"
+	},
+	"Xml Comment - <summary> Should be used to describe a type or a type member":{
+		"prefix": "xml_<summary>",
+		"body": [
+			"/// <summary>${1:description}</summary>"
+		],
+		"description": "Xml Comment - <summary> Should be used to describe a type or a type member"
+	},
+	"Xml Comment - <typeparam> Should be used in the comment for a generic type or method declaration to describe a type parameter":{
+		"prefix": "xml_<typeparam>",
+		"body": [
+			"/// <typeparam name=\"${1:name}\">${2:description}</typeparam>"
+		],
+		"description": "Xml Comment - <typeparam> Should be used in the comment for a generic type or method declaration to describe a type parameter"
+	},
+	"Xml Comment - <typeparamref> Enable consumers of the documentation file to format the word in some distinct way, for example in italics":{
+		"prefix": "xml_<typeparamref>",
+		"body": [
+			"/// <typeparamref name=\"${1:name}\"/>"
+		],
+		"description": "Xml Comment - <typeparamref> Enable consumers of the documentation file to format the word in some distinct way, for example in italics"
+	},
+	"Xml Comment - <value> Lets you describe the value that a property represents":{
+		"prefix": "xml_<value>",
+		"body": [
+			"/// <value>${1:property-description}</value>"
+		],
+		"description": "Xml Comment - <value> Lets you describe the value that a property represents"
+	},
 	"ASP.NET Core 2.0 Preview2 Final csproj Generator":{
 		"prefix": "dnac_csproj_2.0",
 		"body": [

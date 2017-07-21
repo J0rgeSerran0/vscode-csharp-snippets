@@ -4,6 +4,35 @@
 * All notable changes to the "vscode-csharp-snippets" extension will be documented in this file.
 
 
+## [0.1.5] (2017-07-21)
+
+* Added a new section of snippets, for Xml Comments
+
+```
+XML Comments Snippets
+```
+* New snippets
+
+  - `[xml_<c>]` :: Xml Comment - <c> Gives you a way to indicate that text within a description should be marked as code
+  - `[xml_<code>]` :: Xml Comment - <code> Gives you a way to indicate multiple lines as code. Use <c> to indicate that text within a description should be marked as code
+  - `[xml_<example>]` :: Xml Comment - <example> Lets you specify an example of how to use a method or other library member
+  - `[xml_<exception>]` :: Xml Comment - <exception> Lets you specify which exceptions can be thrown
+  - `[xml_<include>]` :: Xml Comment - <include> Lets you refer to comments in another file that describe the types and members in your source code
+  - `[xml_<list>]` :: Xml Comment - <list> A list or table can have as many <item> blocks as needed
+  - `[xml_<para>]` :: Xml Comment - <para> Is for use inside a tag, such as <summary>, <remarks>, or <returns>, and lets you add structure to the text
+  - `[xml_<param>]` :: Xml Comment - <param> Should be used in the comment for a method declaration to describe one of the parameters for the method
+  - `[xml_<paramref>]` :: Xml Comment - <paramref> Gives you a way to indicate that a word in the code comments, for example in a <summary> or <remarks> block refers to a parameter
+  - `[xml_<permission>]` :: Xml Comment - <permission> Lets you document the access of a member
+  - `[xml_<remarks>]` :: Xml Comment - <remarks> Is used to add information about a type, supplementing the information specified with <summary>
+  - `[xml_<returns>]` :: Xml Comment - <returns> Should be used in the comment for a method declaration to describe the return value
+  - `[xml_<see>]` :: Xml Comment - <see> Lets you specify a link from within text. Use <seealso> to indicate that text should be placed in a See Also section
+  - `[xml_<seealso>]` :: Xml Comment - <seealso> Lets you specify the text that you might want to appear in a See Also section
+  - `[xml_<summary>]` :: Xml Comment - <summary> Should be used to describe a type or a type member
+  - `[xml_<typeparam>]` :: Xml Comment - <typeparam> Should be used in the comment for a generic type or method declaration to describe a type parameter
+  - `[xml_<typeparamref>]` :: Xml Comment - <typeparamref> Enable consumers of the documentation file to format the word in some distinct way, for example in italics
+  - `[xml_<value>]` :: Xml Comment - <value> Lets you describe the value that a property represents
+
+
 ## [0.1.4] (2017-07-16)
 
 ```
