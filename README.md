@@ -65,6 +65,8 @@ pum
 pvm
 sim
 singleton
+singletonl
+singletonts
 struct
 svm
 switch
@@ -74,6 +76,11 @@ using
 while
 ```
 
+### .NET Core C# snippets
+```csharp
+sln
+```
+
 ### ASP.NET Core C# snippets
 ```csharp
 dnac_#helloworld_Startup
@@ -81,6 +88,8 @@ dnac_#helloworld_WebApp
 dnac_csproj_2.0
 dnac_conf
 dnac_conf_file
+dnac_controller
+dnac_startupenv
 ```
 
 ### XML Comments snippets

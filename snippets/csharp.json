@@ -403,7 +403,7 @@
 	"Creates a singleton class": {
 		"prefix": "singleton",
 		"body": [
-			"public class ${1:MyClass}",
+			"public sealed class ${1:MyClass}",
 			"{",
 			"\tprivate static volatile I${2:MyObject} instance;",
 			"\tprivate static Object syncRootObject = new Object();",
@@ -422,11 +422,45 @@
 			"\t\t\t\t\t}",
 			"\t\t\t\t}",
 			"\t\t\t}",
+			"\t\t\treturn instance;",
 			"\t\t}",
 			"\t}",
 			"}"
 			],
 		"description": "Creates a singleton class"
+	},
+	"Creates a singleton class with System.Lazy<T>": {
+		"prefix": "singletonl",
+		"body": [
+			"public sealed class ${1:MyClass} : I${2:MyObject}",
+			"{",
+			"\tprivate static readonly Lazy<I${2}> _instance = new Lazy<I${2}>(() => new ${1}());",
+			"",
+			"\tpublic static I${2} Instance { get { return _instance.Value; } }",
+			"\t",
+			"\tprivate ${1}()",
+			"\t{",
+			"\t}",
+			"}"
+			],
+		"description": "Creates a singleton class with System.Lazy<T>"
+	},
+	"Creates a singleton class as thread-safe without using locks": {
+		"prefix": "singletonts",
+		"body": [
+			"public sealed class ${1:MyClass} : I${2:MyObject}",
+			"{",
+			"\tprivate static readonly I${2} _instance = new ${1}();",
+			"",
+			"\tstatic ${1}() {}",
+			"",
+			"\tprivate ${1}() {}",
+			"",
+			"\tpublic static I${2} Instance { get { return _instance; } }",
+			"\t",
+			"}"
+			],
+		"description": "Creates a singleton class as thread-safe without using locks"
 	},
 	"Creates a struct declaration":{
 		"prefix": "struct",
@@ -546,6 +580,31 @@
 			"</Project>"
 		],
 		"description": "csproj Generator for .NET Core 2.0"
+	},
+	"sln Generator for Visual Studio 2017 (.NET Core and ASP.NET Core)":{
+		"prefix": "sln",
+		"body": [
+			"Microsoft Visual Studio Solution File, Format Version 12.00",
+			"# Visual Studio 15",
+			"VisualStudioVersion = 15.0.26124.0",
+			"MinimumVisualStudioVersion = 15.0.26124.0",
+			"Project(\"{${1:FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}}\") = \"${2:SolutionName}\", \"$2\\\\${3:ProjectName}.csproj\", \"{${4:3E6CAA7F-C72A-428D-91C8-74ADBD56D3CA}}\"",
+			"EndProject",
+			"Global",
+			"\tGlobalSection(SolutionConfigurationPlatforms) = preSolution",
+			"\t\tDebug|Any CPU = Debug|Any CPU",
+			"\t\tDebug|x64 = Debug|x64",
+			"\t\tDebug|x86 = Debug|x86",
+			"\t\tRelease|Any CPU = Release|Any CPU",
+			"\t\tRelease|x64 = Release|x64",
+			"\t\tRelease|x86 = Release|x86",
+			"\tEndGlobalSection",
+			"\tGlobalSection(SolutionProperties) = preSolution",
+			"\t\tHideSolutionNode = FALSE",
+			"\tEndGlobalSection",
+			"EndGlobal"
+		],
+		"description": "sln Generator for Visual Studio 2017 (.NET Core and ASP.NET Core)"
 	},
 	"Xml Comment - <c> Gives you a way to indicate that text within a description should be marked as code":{
 		"prefix": "xml_<c>",
@@ -794,5 +853,47 @@
 			"Configuration = builder.Build();"
 			],
 		"description": "ASP.NET Core - Creates a way to configure the JSON configuration provider with a custom config file"
+	},
+	"ASP.NET Core - Creates the base of a controller":{
+		"prefix": "dnac_controller",
+		"body": [
+			"namespace ${1:Name}.Controllers",
+			"{",
+			"",
+			"\tusing Microsoft.AspNetCore.Mvc;",
+			"",
+			"\tpublic class ${2:Name}Controller : Controller",
+			"\t{",
+			"\t\tpublic IActionResult Index()",
+			"\t\t{",
+			"\t\t\treturn View();",
+			"\t\t}",
+			"",
+			"\t\tpublic IActionResult ${3:Welcome}()",
+			"\t\t{",
+			"\t\t\tViewData[\"Message\"] = \"Your welcome message\";",
+			"",
+			"\t\t\treturn View();",
+			"\t\t}",
+			"\t}",
+			"}"
+			],
+		"description": "ASP.NET Core - Creates the base of a controller"
+	},
+	"ASP.NET Core - Creates the Startup constructor to be used with the web hosting environment":{
+		"prefix": "dnac_startupenv",
+		"body": [
+			"public Startup(IHostingEnvironment env)",
+			"{",
+			"\tvar builder = new ConfigurationBuilder()",
+			"\t\t.SetBasePath(env.ContentRootPath)",
+			"\t\t.AddJsonFile(\"appsettings.json\", optional: false, reloadOnChange: true)",
+			"\t\t.AddJsonFile($\"appsettings.{env.EnvironmentName}.json\", optional: true)",
+			"\t\t.AddEnvironmentVariables();",
+			"",
+			"\tConfiguration = builder.Build();",
+			"}"
+			],
+		"description": "ASP.NET Core - Creates the Startup constructor to be used with the web hosting environment"
 	}
 }

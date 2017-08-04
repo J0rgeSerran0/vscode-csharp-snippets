@@ -4,6 +4,35 @@
 * All notable changes to the "vscode-csharp-snippets" extension will be documented in this file.
 
 
+## [0.1.6] (2017-08-04)
+
+```
+General C# Snippets
+```
+* Existing snippets modified
+
+  - `[singleton]` :: Modified the snippet resolving a bug
+* New snippets
+
+  - `[singletonl]` :: Creates a singleton class with System.Lazy<T>
+  - `[singletonts]` :: Creates a singleton class as thread-safe without using locks
+
+```
+.NET Core Snippets
+```
+* New snippets
+
+  - `[sln]` :: sln Generator for Visual Studio 2017 (.NET Core and ASP.NET Core)
+
+```
+ASP.NET Core Snippets
+```
+* New snippets
+
+  - `[dnac_controller]` :: ASP.NET Core - Creates the base of a controller
+  - `[dnac_startupenv]` :: ASP.NET Core - Creates the Startup constructor to be used with the web hosting environment
+
+
 ## [0.1.5] (2017-07-21)
 
 * Added a new section of snippets, for Xml Comments
