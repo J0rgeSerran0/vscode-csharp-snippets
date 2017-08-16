@@ -745,7 +745,7 @@
 		],
 		"description": "Xml Comment - <value> Lets you describe the value that a property represents"
 	},
-	"ASP.NET Core 2.0 Preview2 Final csproj Generator":{
+	"ASP.NET Core 2.0 csproj Generator":{
 		"prefix": "dnac_csproj_2.0",
 		"body": [
 			"<Project Sdk=\"Microsoft.NET.Sdk.Web\">",
@@ -756,11 +756,11 @@
 			"\t\t<Folder Include=\"wwwroot\\\" />",
 			"\t</ItemGroup>",
 			"\t<ItemGroup>",
-			"\t\t<PackageReference Include=\"Microsoft.AspNetCore.All\" Version=\"2.0.0-preview2-final\" />",
+			"\t\t<PackageReference Include=\"Microsoft.AspNetCore.All\" Version=\"2.0.0\" />",
 			"\t</ItemGroup>",
 			"</Project>"
 		],
-		"description": "ASP.NET Core 2.0 Preview2 Final csproj Generator"
+		"description": "ASP.NET Core 2.0 csproj Generator"
 	},
 	"ASP.NET Core - Creates a HelloWorld sample - Startup":{
 		"prefix": "dnac_#helloworld_Startup",

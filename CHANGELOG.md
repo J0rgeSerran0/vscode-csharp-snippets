@@ -4,6 +4,16 @@
 * All notable changes to the "vscode-csharp-snippets" extension will be documented in this file.
 
 
+## [0.2.0] (2017-08-16)
+
+```
+ASP.NET Core Snippets
+```
+* Existing snippets modified
+
+  - `[dnac_csproj_2.0]` has been deleted the tag **preview** for the 2.0 version to be aligned with the .NET Core 2.0 final version published
+
+
 ## [0.1.6] (2017-08-04)
 
 ```
