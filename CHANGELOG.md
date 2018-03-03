@@ -4,6 +4,17 @@
 * All notable changes to the "vscode-csharp-snippets" extension will be documented in this file.
 
 
+
+## [0.3.0] (2018-03-02)
+
+```
+General
+```
+* Deleted some Snippets
+
+  - Thanks to [doggy8088 (Will)](https://github.com/doggy8088) for ask me and share with me his feedback about delete some snippets in the extension that you can find in the OmniSharp extension too. Now, you can use OmniSharp and this extension together without disable the C# snippets in OmniSharp. You will find this extension as an ideal complement of OmniSharp now.
+
+
 ## [0.2.0] (2017-08-16)
 
 ```
