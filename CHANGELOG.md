@@ -5,7 +5,7 @@
 
 
 
-## [0.3.0] (2018-03-02)
+## [0.3.1] (2018-03-02)
 
 ```
 General
@@ -190,3 +190,4 @@ General C# Snippets
   - `[using]`
   - `[while]`
   - ~~`[con_general_output]`~~
+  
