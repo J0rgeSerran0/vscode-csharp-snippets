@@ -578,5 +578,26 @@
 			"}"
 			],
 		"description": "ASP.NET Core - Creates the Startup constructor to be used with the web hosting environment"
+	},
+	".NET Core - Creates a MS-Test class":{
+		"prefix": "mstest",
+		"body": [
+			"using Microsoft.VisualStudio.TestTools.UnitTesting;",
+			"using System;",
+			"",
+			"namespace ${1:ProjectNamespace}.Test",
+			"{",
+			"\t[TestClass]",
+			"\tpublic class ${2:ClassName}Test",
+			"\t{",
+			"\t\t[TestMethod]",
+			"\t\tpublic void ${3:MethodName}()",
+			"\t\t{",
+			"\t\t\t",
+			"\t\t}",
+			"\t}",
+			"}"
+			],
+		"description": "Creates a MS-Test class with the basic usings and configurable namespace, class and method names"
 	}
 }
