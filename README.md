@@ -89,7 +89,7 @@ xml_<value>
 ```
 
 
-## Instalation
+## Installation
 
 1. Install Visual Studio Code 1.5.0 or higher
 2. Launch Visual Studio Code
