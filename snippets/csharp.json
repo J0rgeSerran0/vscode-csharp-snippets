@@ -331,7 +331,7 @@
 	"Xml Comment - <list> A list or table can have as many <item> blocks as needed":{
 		"prefix": "xml_<list>",
 		"body": [
-			"/// <list type=\"bulltet\">",
+			"/// <list type=\"bullet\">",
 			"///     <listheader>",
 			"///        <term>${1:term}</term>",
 			"///        <description>${2:description}</description>",
