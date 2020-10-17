@@ -36,11 +36,14 @@ csproj_1.0
 csproj_1.1
 csproj_2.0
 csproj_2.1
+csproj_3.1
+csproj_5
 guid
 guidn
 immutable
 linq_distinct
 linq_where
+mstest
 propi
 pum
 pvm

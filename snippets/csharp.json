@@ -264,7 +264,30 @@
 		],
 		"description": "csproj Generator for .NET Core 2.0"
 	},
-	"sln Generator for Visual Studio 2017 (.NET Core and ASP.NET Core)":{
+	"csproj Generator for .NET Core 3.1":{
+		"prefix": "csproj_3.1",
+		"body": [
+			"<Project Sdk=\"Microsoft.NET.Sdk\">",
+			"\t<PropertyGroup>",
+			"\t\t<OutputType>Exe</OutputType>",
+			"\t\t<TargetFramework>netcoreapp3.1</TargetFramework>",
+			"\t</PropertyGroup>",
+			"</Project>"
+		],
+		"description": "csproj Generator for .NET Core 3.1"
+	},
+	"csproj Generator for .NET 5":{
+		"prefix": "csproj_5",
+		"body": [
+			"<Project Sdk=\"Microsoft.NET.Sdk\">",
+			"\t<PropertyGroup>",
+			"\t\t<OutputType>Exe</OutputType>",
+			"\t\t<TargetFramework>net5.0</TargetFramework>",
+			"\t</PropertyGroup>",
+			"</Project>"
+		],
+		"description": "csproj Generator for .NET 5"
+	},	"sln Generator for Visual Studio 2017 (.NET Core and ASP.NET Core)":{
 		"prefix": "sln",
 		"body": [
 			"Microsoft Visual Studio Solution File, Format Version 12.00",
@@ -444,6 +467,23 @@
 			"</Project>"
 		],
 		"description": "ASP.NET Core 2.0 csproj Generator"
+	},
+	"ASP.NET Core 2.1 csproj Generator":{
+		"prefix": "dnac_csproj_2.1",
+		"body": [
+			"<Project Sdk=\"Microsoft.NET.Sdk.Web\">",
+			"\t<PropertyGroup>",
+			"\t\t<TargetFramework>netcoreapp2.1</TargetFramework>",
+			"\t</PropertyGroup>",
+			"\t<ItemGroup>",
+			"\t\t<Folder Include=\"wwwroot\\\" />",
+			"\t</ItemGroup>",
+			"\t<ItemGroup>",
+			"\t\t<PackageReference Include=\"Microsoft.AspNetCore.All\" Version=\"2.1.0\" />",
+			"\t</ItemGroup>",
+			"</Project>"
+		],
+		"description": "ASP.NET Core 2.1 csproj Generator"
 	},
 	"ASP.NET Core - Creates a HelloWorld sample - Startup":{
 		"prefix": "dnac_#helloworld_Startup",

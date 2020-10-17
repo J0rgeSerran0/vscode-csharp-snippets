@@ -5,6 +5,23 @@
 
 
 
+## [0.5.0] (2020-10-17)
+
+```
+Bug Fixing
+```
+- Thanks to [Jaguar9383 (Sviataslau Karavatski)](https://github.com/Jaguar9383) for resolve a typo error with `[singleton]`
+- Thanks to [jonhaddow (Jon Haddow)](https://github.com/jonhaddow) for resolve a typo error with `[xml_<list>]`
+- Thanks to [guntbert (Guntbert Reiter)](https://github.com/guntbert) for fix a type error in the `README.md` file
+
+```
+ New Snippets
+```
+  - `[mstest]` :: Contribution of `@massimilianokraus` Creates a MS-Test class
+  - `[csproj_3.1]` :: Creates the content of the csproj file for .NET Core 3.1
+  - `[csproj_5]` :: Creates the content of the csproj file for .NET 5
+
+
 ## [0.3.1] (2018-03-02)
 
 ```
