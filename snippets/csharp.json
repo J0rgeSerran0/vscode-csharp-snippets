@@ -180,7 +180,7 @@
 			"\t\t{",
 			"\t\t\tif (instance == null)",
 			"\t\t\t{",
-			"\t\t\t\tlock (syncRooObject)",
+			"\t\t\t\tlock (syncRootObject)",
 			"\t\t\t\t{",
 			"\t\t\t\t\tif (instance == null)",
 			"\t\t\t\t\t{",
