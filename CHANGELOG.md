@@ -17,7 +17,7 @@ Bug Fixing
 ```
  New Snippets
 ```
-  - `[mstest]` :: Contribution of `@massimilianokraus` Creates a MS-Test class
+  - `[mstest]` :: Contribution of [massimilianokraus (Massimiliano Kraus)](https://github.com/massimilianokraus) Creates a MS-Test class
   - `[csproj_3.1]` :: Creates the content of the csproj file for .NET Core 3.1
   - `[csproj_5]` :: Creates the content of the csproj file for .NET 5
 
