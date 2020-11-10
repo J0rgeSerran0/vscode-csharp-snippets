@@ -5,6 +5,39 @@
 
 
 
+## [0.6.0] (2020-11-10)
+
+```
+General
+```
+* Created a new tutorial to create a gRPC demo using the new snippets added in this version
+
+* Renamed of the ASP.NET Core Snippets
+
+  - All the Snippets for ASP.NET Core have been renamed from `[dnac_*]` to `[ac_*]`.
+
+```
+ New Snippets
+```
+  - `[ac_#helloworld_WebApi]` :: ASP.NET Core 5 - Creates a Web Api HelloWorld sample
+  - `[ac_csproj_5]` :: Creates the content of the csproj file for ASP.NET Core 5
+  - `[crk]` :: Creates a call to ReadKey
+  - `[cwl]` :: Creates a call to WriteLine
+  - `[gRPC_client_csproj]` :: Creates the csproj content for a Grpc Client in .NET 5
+  - `[gRPC_client_program]` :: Creates the Program class for a simple Grpc Client in .NET 5
+  - `[gRPC_proto]` :: Creates a sample Proto file for the Grpc App
+  - `[gRPC_server_csproj]` :: Creates the csproj content for a Grpc Server in .NET 5
+  - `[gRPC_server_program]` :: Creates the Program class for the Grpc Server in .NET 5
+  - `[gRPC_server_service]` :: Creates the Service for the Grpc Server in .NET 5
+  - `[gRPC_server_settings]` :: Creates the Settings content file for the Grpc Server in .NET 5
+  - `[gRPC_server_startup]` :: Creates the Startup class for the Grpc Server in .NET 5
+  - `[prop]` :: Creates a property
+  - `[propinit]` :: Creates an init property
+  - `[propr]` :: Creates a property read-only
+  - `[record]` :: Creates a record type
+  - `[recordd]` :: Creates a record type with deconstructor
+  
+
 ## [0.5.0] (2020-10-17)
 
 ```
@@ -12,7 +45,7 @@ Bug Fixing
 ```
 - Thanks to [Jaguar9383 (Sviataslau Karavatski)](https://github.com/Jaguar9383) for resolve a typo error with `[singleton]`
 - Thanks to [jonhaddow (Jon Haddow)](https://github.com/jonhaddow) for resolve a typo error with `[xml_<list>]`
-- Thanks to [guntbert (Guntbert Reiter)](https://github.com/guntbert) for fix a type error in the `README.md` file
+- Thanks to [guntbert (Guntbert Reiter)](https://github.com/guntbert) for fix a typo error in the `README.md` file
 
 ```
  New Snippets
@@ -50,6 +83,7 @@ General C# Snippets
 * Existing snippets modified
 
   - `[singleton]` :: Modified the snippet resolving a bug
+
 * New snippets
 
   - `[singletonl]` :: Creates a singleton class with System.Lazy<T>

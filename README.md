@@ -32,21 +32,27 @@ classa
 classd
 const
 cr
+crk
 csproj_1.0
 csproj_1.1
 csproj_2.0
 csproj_2.1
 csproj_3.1
 csproj_5
+cwl
 guid
 guidn
 immutable
 linq_distinct
 linq_where
 mstest
+prop
 propi
+propinit
+propr
 pum
 pvm
+record
 singleton
 singletonl
 singletonts
@@ -59,14 +65,28 @@ sln
 
 ### ASP.NET Core C# snippets
 ```csharp
-dnac_#helloworld_Startup
-dnac_#helloworld_WebApp
-dnac_csproj_2.0
-dnac_csproj_2.1
-dnac_conf
-dnac_conf_file
-dnac_controller
-dnac_startupenv
+ac_#helloworld_Startup
+ac_#helloworld_WebApp
+ac_#helloworld_WebApi
+ac_csproj_2.0
+ac_csproj_2.1
+ac_csproj_5
+ac_conf
+ac_conf_file
+ac_controller
+ac_startupenv
+```
+
+### gRPC C# snippets (.NET 5)
+```csharp
+gRPC_client_csproj
+gRPC_client_program
+gRPC_proto
+gRPC_server_csproj
+gRPC_server_program
+gRPC_server_service
+gRPC_server_settings
+gRPC_server_startup
 ```
 
 ### XML Comments snippets
