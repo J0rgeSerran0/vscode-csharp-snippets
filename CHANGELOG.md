@@ -5,6 +5,14 @@
 
 
 
+## [0.6.1] (2020-11-10)
+
+```
+Bug Fixing
+```
+- Fixed a typo error in the `[record]` C# snippet 
+
+
 ## [0.6.0] (2020-11-10)
 
 ```

@@ -214,12 +214,7 @@
 	"Creates a record type":{
 		"prefix": "record",
 		"body": [
-			"public record Person",
-			"{",
-			"\tpublic Person(${1:string} ${2:name}) => ${3:Name} = ($2);",
-			"",
-			"\tpublic $1 $3 { get; set; }",
-			"}"
+			"public record Person(${1:string} ${2:Name});"
 			],
 		"description": "Creates a record type"
 	},
