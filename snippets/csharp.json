@@ -46,6 +46,16 @@
 		],
 		"description": "General output to console"
 	},
+	"Creates a class":{
+		"prefix": "class",
+		"body": [
+			"public class ${1:MyClass}",
+			"{",
+			"\t$0",
+			"}"
+			],
+		"description": "Creates a class"
+	},
 	"Creates an abstract class declaration":{
 		"prefix": "classa",
 		"body": [
@@ -104,6 +114,69 @@
 			],
 		"description": "Creates a call to WriteLine"
 	},
+	"Creates a do while loop":{
+		"prefix": "dowhile",
+		"body": [
+			"do",
+			"{",
+			"\t$0",
+			"} while (${1:true})"
+			],
+		"description": "Creates a do while loop"
+	},
+	"Creates an else statement":{
+		"prefix": "else",
+		"body": [
+			"else",
+			"{",
+			"\t$0",
+			"}"
+			],
+		"description": "Creates an else statement"
+	},	
+	"Creates an enum type":{
+		"prefix": "enum",
+		"body": [
+			"public enum ${1:MyEnumType}",
+			"{",
+			"\t$0",
+			"}"
+			],
+		"description": "Creates an enum type"
+	},	
+	"Creates an exception class":{
+		"prefix": "exception",
+		"body": [
+			"public class ${1:MyException} : System.Exception",
+			"{",
+			"\tpublic $1() {}",
+			"\tpublic $1(string message) : base(message) {}",
+			"\tpublic $1(string message, System.Exception inner) : base(message, inner) {}",
+			"\tpublic $1(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context) : base(info, context) {}",
+			"}"
+			],
+		"description": "Creates an exception class"
+	},	
+	"Creates a for loop":{
+		"prefix": "for",
+		"body": [
+			"for (var ${1:i} = 0; $1 < ${2:length}; $1++)",
+			"{",
+			"\t$0",
+			"}"
+			],
+		"description": "Creates a for loop"
+	},
+	"Creates a foreach statement":{
+		"prefix": "foreach",
+		"body": [
+			"foreach (var ${1:item} in ${2:collection})",
+			"{",
+			"\t$0",
+			"}"
+			],
+		"description": "Creates a foreach statement"
+	},
 	"Creates a new instance of the Guid structure":{
 		"prefix": "guid",
 		"body": [
@@ -119,6 +192,39 @@
 			"$0"
 			],
 		"description": "Creates as string, a new instance of the Guid structure without hyphens"
+	},
+	"Creates an if statement":{
+		"prefix": "if",
+		"body": [
+			"if (${1:true})",
+			"{",
+			"\t$0",
+			"}"
+			],
+		"description": "Creates an if statement"
+	},
+	"Creates an if else statement":{
+		"prefix": "ifelse",
+		"body": [
+			"if (${1:true})",
+			"{",
+			"\t$0",
+			"}",
+			"else",
+			"{",
+			"\t",
+			"}"
+			],
+		"description": "Creates an if else statement"
+	},
+	"Creates a conditional operator":{
+		"prefix": "iif",
+		"body": [
+			"var ${1:value} = ${2:true};",
+			"var ${3:result} = (${1} ? ${4:true} : ${5:false});",
+			"$0"
+			],
+		"description": "Creates a conditional operator"
 	},
 	"Creates an immutable object":{
 		"prefix": "immutable",
@@ -136,6 +242,16 @@
 			],
 		"description": "Creates an immutable object"
 	},
+	"Creates an interface":{
+		"prefix": "interface",
+		"body": [
+			"public interface I${1:MyInterface}",
+			"{",
+			"\t$0",
+			"}"
+			],
+		"description": "Creates an interface"
+	},	
 	"Creates a LINQ Distinct sentence":{
 		"prefix": "linq_distinct",
 		"body": [
@@ -153,6 +269,44 @@
 			],
 		"description": "Creates a LINQ Where sentence"
 	},
+	"Creates a lock statement":{
+		"prefix": "lock",
+		"body": [
+			"lock (${1:true})",
+			"{",
+			"\t$0",
+			"}"
+			],
+		"description": "Creates a lock statement"
+	},	
+	"Creates a Console Main structure":{
+		"prefix": "main",
+		"body": [
+			"public static void Main(string[] args)",
+			"{",
+			"\t$0",
+			"}"
+			],
+		"description": "Creates a Console Main structure"
+	},	
+	"Creates a Windows Message Box":{
+		"prefix": "msgbox",
+		"body": [
+			"System.Windows.Forms.MessageBox.Show(\"${1:Hello}\");",
+			"$0"
+			],
+		"description": "Creates a Windows Message Box"
+	},	
+	"Creates a Namespace":{
+		"prefix": "namespace",
+		"body": [
+			"namespace ${1:MyNamespace}",
+			"{",
+			"\t$0",
+			"}"
+			],
+		"description": "Creates a Namespace"
+	},	
 	"Creates a property": {
 		"prefix": "prop",
 		"body": [
@@ -294,6 +448,86 @@
 			"}"
 			],
 		"description": "Creates a singleton class as thread-safe without using locks"
+	},
+	"Creates a struct": {
+		"prefix": "struct",
+		"body": [
+			"public struct ${1:MyStruct}",
+			"{",
+			"\t$0",
+			"}"
+			],
+		"description": "Creates a struct"
+	},
+	"Creates a switch statement": {
+		"prefix": "switch",
+		"body": [
+			"switch (${1:value})",
+			"{",
+			"\tcase ${2:value1}:",
+			"\t\tbreak;",
+			"\tdefault:",
+			"\t\tbreak;",
+			"}",
+			"$0"
+			],
+		"description": "Creates a switch statement"
+	},
+	"Creates a C# 9 top-level statement": {
+		"prefix": "tls",
+		"body": [
+			"System.Console.WriteLine(\"${1:Hello World!}\");"
+			],
+		"description": "Creates a C# 9 top-level statement"
+	},
+	"Creates a try catch": {
+		"prefix": "try",
+		"body": [
+			"try",
+			"{",
+			"\t$0",
+			"}",
+			"catch (${1:System.Exception} ex)",
+			"{",
+			"\t // TODO",
+			"}"
+			],
+		"description": "Creates a try catch"
+	},
+	"Creates a try catch finally": {
+		"prefix": "tryf",
+		"body": [
+			"try",
+			"{",
+			"\t$0",
+			"}",
+			"catch (${1:System.Exception} ex)",
+			"{",
+			"\t // TODO",
+			"}",
+			"finally",
+			"{",
+			"\t",
+			"}"
+			],
+		"description": "Creates a try catch finally"
+	},
+	"Creates an using":{
+		"prefix": "using",
+		"body": [
+			"using ${1:System}$0;"
+			],
+		"description": "Creates an using"
+	},
+	"Creates a while loop":{
+		"prefix": "while",
+		"body": [
+			"while (${1:true})",
+			"{",
+			"\t$0",
+			"}"
+			],
+		"description": "Creates a while loop"
 	},
 	"csproj Generator for .NET Core 1.0":{
 		"prefix": "csproj_1.0",
@@ -552,6 +786,17 @@
 		],
 		"description": "ASP.NET Core 2.1 csproj Generator"
 	},
+	"ASP.NET Core 3.1 csproj Generator":{
+		"prefix": "ac_csproj_3.1",
+		"body": [
+			"<Project Sdk=\"Microsoft.NET.Sdk.Web\">",
+			"\t<PropertyGroup>",
+			"\t\t<TargetFramework>netcoreapp3.1</TargetFramework>",
+			"\t</PropertyGroup>",
+			"</Project>"
+		],
+		"description": "ASP.NET Core 3.1 csproj Generator"
+	},
 	"ASP.NET 5 csproj Generator":{
 		"prefix": "ac_csproj_5",
 		"body": [
@@ -645,6 +890,18 @@
 			"Console.ReadKey();"
 			],
 		"description": "ASP.NET Core - Creates a HelloWorld sample - WebApi"
+	},
+	"ASP.NET Core - Creates a MVC/Api Action":{
+		"prefix": "ac_action",
+		"body": [
+			"[${1:HttpGet}(nameof($2))]",
+			"public async Task<IActionResult> ${2:ActionName}(${3:string} ${4:name})",
+			"{",
+			"\t$0",
+			"\treturn Ok;",
+			"}"
+			],
+		"description": "ASP.NET Core - Creates a MVC/Api Action"
 	},
 	"ASP.NET Core - Creates a way to configure the JSON configuration provider":{
 		"prefix": "ac_conf",

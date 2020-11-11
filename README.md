@@ -28,6 +28,7 @@ If you have problems to see the snippets, press `Ctrl`+`Space` (Windows, Linux) 
 ~
 cclear
 cgo
+class
 classa
 classd
 const
@@ -40,12 +41,26 @@ csproj_2.1
 csproj_3.1
 csproj_5
 cwl
+dowhile
+else
+enum
+exception
+for
+foreach
 guid
 guidn
+if
+ifelse
+iif
 immutable
+interface
 linq_distinct
 linq_where
+lock
+main
+msgbox
 mstest
+namespace
 prop
 propi
 propinit
@@ -56,6 +71,13 @@ record
 singleton
 singletonl
 singletonts
+struct
+switch
+tls
+try
+tryf
+using
+while
 ```
 
 ### .NET Core C# snippets
@@ -68,8 +90,10 @@ sln
 ac_#helloworld_Startup
 ac_#helloworld_WebApp
 ac_#helloworld_WebApi
+ac_action
 ac_csproj_2.0
 ac_csproj_2.1
+ac_csproj_3.1
 ac_csproj_5
 ac_conf
 ac_conf_file

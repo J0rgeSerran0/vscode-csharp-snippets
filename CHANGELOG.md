@@ -5,6 +5,37 @@
 
 
 
+## [1.0.0] (2020-11-11)
+
+```
+ New Snippets
+```
+  - `[ac_action]` :: Creates a MVC/Api Action
+  - `[ac_csproj_3.1]` :: Creates a MVC/Api Action  
+  - `[class]` :: Creates a class
+  - `[dowhile]` :: Creates a do while loop
+  - `[else]` :: Creates an else statement  
+  - `[enum]` :: Creates an enum type
+  - `[exception]` :: Creates an exception class
+  - `[for]` :: Creates a for loop
+  - `[foreach]` :: Creates a foreach statement
+  - `[if]` :: Creates an if statement
+  - `[ifelse]` :: Creates an if else statement
+  - `[iif]` :: Creates a conditional operator
+  - `[interface]` :: Creates an interface
+  - `[lock]` :: Creates a lock statement
+  - `[main]` :: Creates a Console Main structure
+  - `[msgbox]` :: Creates a Windows Message Box
+  - `[namespace]` :: Creates a Namespace
+  - `[struct]` :: Creates a struct
+  - `[switch]` :: Creates a switch statement
+  - `[tls]` :: Creates a C# 9 top-level statement
+  - `[try]` :: Creates a try catch
+  - `[tryf]` :: Creates a try catch finally
+  - `[using]` :: Creates an using
+  - `[while]` :: Creates a while loop
+
+
 ## [0.6.1] (2020-11-10)
 
 ```
