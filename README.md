@@ -8,6 +8,7 @@ You can find this extension in the [Visual Studio Code Marketplace](https://mark
 
 See the [CHANGELOG](CHANGELOG.md) for the latest changes included.
 
+
 ## Usage
 Put the cursor on the C# file.
 
@@ -15,11 +16,7 @@ Type part of a snippet, press `tab`, and the snippet unfolds.
 
 If you have problems to see the snippets, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (OSX).
 
-(see the [TUTORIALS](TUTORIALS.md) to know more)
-
-
-[This is not necessary anymore]
-~~**IMPORTANT** :: If you use the *C# for Visual Studio Code (powered by OmniSharp)* extension, but you want to see the **C# Snippets** only, [read this post](https://geeks.ms/jorge/2017/07/16/how-to-disable-the-c-snippets-for-the-c-extension-of-visual-studio-code/).~~
+(**see the [TUTORIALS](TUTORIALS.md) to know more**)
 
 
 ### C# general snippets
