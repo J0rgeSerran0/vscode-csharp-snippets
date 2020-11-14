@@ -77,7 +77,7 @@ using
 while
 ```
 
-### .NET Core C# snippets
+### Visual Studio snippets
 ```csharp
 sln_2017
 sln_2019
