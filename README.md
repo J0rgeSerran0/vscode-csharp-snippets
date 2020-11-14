@@ -79,7 +79,8 @@ while
 
 ### .NET Core C# snippets
 ```csharp
-sln
+sln_2017
+sln_2019
 ```
 
 ### ASP.NET Core C# snippets

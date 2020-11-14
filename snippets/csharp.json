@@ -588,8 +588,9 @@
 			"</Project>"
 		],
 		"description": "csproj Generator for .NET 5"
-	},	"sln Generator for Visual Studio 2017 (.NET Core and ASP.NET Core)":{
-		"prefix": "sln",
+	},	
+	"sln Generator for Visual Studio 2017 (.NET Core and ASP.NET Core)":{
+		"prefix": "sln_2017",
 		"body": [
 			"Microsoft Visual Studio Solution File, Format Version 12.00",
 			"# Visual Studio 15",
@@ -612,6 +613,31 @@
 			"EndGlobal"
 		],
 		"description": "sln Generator for Visual Studio 2017 (.NET Core and ASP.NET Core)"
+	},
+	"sln Generator for Visual Studio 2019 (.NET Core and ASP.NET Core)":{
+		"prefix": "sln_2019",
+		"body": [
+			"Microsoft Visual Studio Solution File, Format Version 12.00",
+			"# Visual Studio Version 16",
+			"VisualStudioVersion = 16.0.30711.63",
+			"MinimumVisualStudioVersion = 10.0.40219.1",
+			"Project(\"{${1:FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}}\") = \"${2:SolutionName}\", \"$2\\\\${3:ProjectName}.csproj\", \"{${4:3E6CAA7F-C72A-428D-91C8-74ADBD56D3CA}}\"",
+			"EndProject",
+			"Global",
+			"\tGlobalSection(SolutionConfigurationPlatforms) = preSolution",
+			"\t\tDebug|Any CPU = Debug|Any CPU",
+			"\t\tDebug|x64 = Debug|x64",
+			"\t\tDebug|x86 = Debug|x86",
+			"\t\tRelease|Any CPU = Release|Any CPU",
+			"\t\tRelease|x64 = Release|x64",
+			"\t\tRelease|x86 = Release|x86",
+			"\tEndGlobalSection",
+			"\tGlobalSection(SolutionProperties) = preSolution",
+			"\t\tHideSolutionNode = FALSE",
+			"\tEndGlobalSection",
+			"EndGlobal"
+		],
+		"description": "sln Generator for Visual Studio 2019 (.NET Core and ASP.NET Core)"
 	},
 	"Xml Comment - <c> Gives you a way to indicate that text within a description should be marked as code":{
 		"prefix": "xml_<c>",

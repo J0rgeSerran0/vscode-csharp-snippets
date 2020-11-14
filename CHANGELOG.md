@@ -5,6 +5,19 @@
 
 
 
+## [1.0.1] (2020-11-14)
+
+```
+ New Snippets
+```
+  - `[sln_2019]` :: Creates a soluction file for Visual Studio 2019 (.NET Core and ASP.NET Core)
+
+```
+ Renamed
+```
+  - `[sln]` to `[sln_2017]` :: Creates a soluction file for Visual Studio 2017 (.NET Core and ASP.NET Core)
+
+
 ## [1.0.0] (2020-11-11)
 
 ```

@@ -4,7 +4,7 @@
     "displayName": "C# Snippets",
     "description": "C# Snippets for Visual Studio Code",
     "icon": "images/vscode-csharp-snippets.png",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "Jorge Serrano",
     "license": "SEE LICENSE IN LICENSE.md",
     "repository": {
@@ -12,16 +12,24 @@
         "url": "https://github.com/J0rgeSerran0/vscode-csharp-snippets.git"
     },    
     "categories": [
-        "Languages",
+        "Other",
+        "Programming Languages",
         "Snippets"
     ],
     "keywords": [
         ".NET",
+        ".NET Core",
         ".NET 5",
+        "ASP.NET",
+        "gRPC",
+        "Visual Studio",
         "C#",
-        "CSharp",
-        "Languages",
-        "Snippets"
+        "csharp",
+        "languages",
+        "dotnet",
+        "programming languages",
+        "snippet",
+        "snippets"
     ],
     "contributors": [
         {
