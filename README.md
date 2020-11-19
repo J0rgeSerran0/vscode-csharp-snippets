@@ -1,5 +1,12 @@
 # C# Snippets for Visual Studio Code
 
+![Downloads](https://img.shields.io/visual-studio-marketplace/d/jorgeserrano.vscode-csharp-snippets) 
+![Installs](https://img.shields.io/visual-studio-marketplace/i/jorgeserrano.vscode-csharp-snippets) 
+[![Visual Studio Code Extension](https://img.shields.io/visual-studio-marketplace/v/jorgeserrano.vscode-csharp-snippets?label=Version)](https://marketplace.visualstudio.com/items?itemName=jorgeserrano.vscode-csharp-snippets) 
+![Issues](https://img.shields.io/github/issues/J0rgeSerran0/vscode-csharp-snippets?color=B22DFF) 
+![Issues Pull Requests](https://img.shields.io/github/issues-pr/J0rgeSerran0/vscode-csharp-snippets?color=B22DFF)
+
+
 ![alt text](https://github.com/J0rgeSerran0/vscode-csharp-snippets/raw/master/images/vscode-csharp-snippets.png "C# Snippets")
 
 This extension for Visual Studio Code adds snippets for C#.
