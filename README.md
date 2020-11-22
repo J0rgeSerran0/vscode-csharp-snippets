@@ -78,6 +78,7 @@ singletonts
 struct
 switch
 tls
+todo
 try
 tryf
 using
@@ -96,14 +97,26 @@ ac_#helloworld_Startup
 ac_#helloworld_WebApp
 ac_#helloworld_WebApi
 ac_action
+ac_comment
+ac_conf
+ac_conf_file
+ac_controller
 ac_csproj_2.0
 ac_csproj_2.1
 ac_csproj_3.1
 ac_csproj_5
-ac_conf
-ac_conf_file
-ac_controller
+ac_rz_code
+ac_rz_comment
+ac_rz_for
+ac_rz_raw
 ac_startupenv
+```
+
+### .NET Extensions
+```csharp
+ex_md5_from_stream
+ex_stream_to_string
+ex_string_to_stream
 ```
 
 ### gRPC C# snippets (.NET 5)

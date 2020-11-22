@@ -480,6 +480,13 @@
 			],
 		"description": "Creates a C# 9 top-level statement"
 	},
+	"Creates a TODO comment": {
+		"prefix": "todo",
+		"body": [
+			"// TODO: $0"
+			],
+		"description": "Creates a TODO comment"
+	},
 	"Creates a try catch": {
 		"prefix": "try",
 		"body": [
@@ -929,6 +936,13 @@
 			],
 		"description": "ASP.NET Core - Creates a MVC/Api Action"
 	},
+	"ASP.NET Core - Creates a comment block in ASP.NET":{
+		"prefix": "ac_comment",
+		"body": [
+			"<%-- $0 -->"
+			],
+		"description": "ASP.NET Core - Creates a comment block in ASP.NET"
+	},
 	"ASP.NET Core - Creates a way to configure the JSON configuration provider":{
 		"prefix": "ac_conf",
 		"body": [
@@ -980,6 +994,39 @@
 			"}"
 			],
 		"description": "ASP.NET Core - Creates the base of a controller"
+	},
+	"ASP.NET Core Razor - Creates a code block for Razor":{
+		"prefix": "ac_rz_code",
+		"body": [
+			"@{",
+			"\t$0",
+			"}"
+			],
+		"description": "ASP.NET Core Razor - Creates a comment block for Razor"
+	},
+	"ASP.NET Core Razor - Creates a comment block for Razor":{
+		"prefix": "ac_rz_comment",
+		"body": [
+			"@* $0 *@"
+			],
+		"description": "ASP.NET Core Razor - Creates a comment block for Razor"
+	},
+	"ASP.NET Core Razor - Creates a for statement for Razor":{
+		"prefix": "ac_rz_for",
+		"body": [
+			"@for (var ${1:i} = 0; $1 < ${2:length}; $1++)",
+			"{",
+			"\t$0",
+			"}"
+			],
+		"description": "ASP.NET Core Razor - Creates a for statement for Razor"
+	},
+	"ASP.NET Core Razor - Creates a HTML markup for Razor":{
+		"prefix": "ac_rz_raw",
+		"body": [
+			"@Html.Raw(\"<${1:span}>${2:Hello World}</$1>\")"
+			],
+		"description": "ASP.NET Core Razor - Creates a HTML markup for Razor"
 	},
 	"ASP.NET Core - Creates the Startup constructor to be used with the web hosting environment":{
 		"prefix": "ac_startupenv",
@@ -1229,5 +1276,39 @@
 			"}"
 		],
 		"description": "gRPC .NET 5 - Creates the Startup class for the Server"
+	},
+	"Extension for get the MD5 value from a stream": {
+		"prefix": "ex_md5_from_stream",
+		"body": [
+			"public static string GetMD5(this System.IO.Stream stream)",
+			"{",
+			"\tstream.Position = 0;",
+			"\tvar arrayByteHashValue = new System.Security.Cryptography.MD5CryptoServiceProvider().ComputeHash(stream);",
+			"\treturn BitConverter.ToString(arrayByteHashValue).Replace(\"-\", String.Empty).ToLower();",
+			"}"
+			],
+		"description": "Extension for get the MD5 value from a stream"
+	},
+	"Extension for convert a stream to string": {
+		"prefix": "ex_stream_to_string",
+		"body": [
+			"public static string ToString(this System.IO.Stream stream)",
+			"{",
+			"\tstream.Position = 0;",
+			"\treturn new System.IO.StreamReader(stream).ReadToEnd();",
+			"}"
+			],
+		"description": "Extension for convert a stream to string"
+	},
+	"Extension for convert a string to stream": {
+		"prefix": "ex_string_to_stream",
+		"body": [
+			"public static System.IO.Stream ConvertToStream(this string source)",
+			"{",
+			"\tvar byteArray = System.Text.Encoding.UTF8.GetBytes(source);",
+			"\treturn new System.IO.MemoryStream(byteArray);",
+			"}"
+			],
+		"description": "Extension for convert a string to stream"
 	}
 }

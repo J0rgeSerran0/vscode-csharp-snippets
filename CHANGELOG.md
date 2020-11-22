@@ -5,6 +5,22 @@
 
 
 
+## [1.0.2] (2020-11-22)
+
+```
+ New Snippets
+```
+  - `[ac_comment]` :: Creates a comment block for ASP.NET
+  - `[ac_rz_code]` :: Creates a code block for Razor
+  - `[ac_rz_comment]` :: Creates a comment block for Razor
+  - `[ac_rz_for]` :: Creates a for statement for Razor
+  - `[ac_rz_raw]` :: Creates a HTML markup for Razor
+  - `[ex_md5_from_stream]` :: Extension for get the MD5 value from a stream 
+  - `[ex_stream_to_string]` :: Extension for convert a stream to string 
+  - `[ex_string_to_stream]` :: Extension for convert a string to stream
+  - `[todo]` :: Creates a TODO comment 
+
+
 ## [1.0.1] (2020-11-14)
 
 ```
