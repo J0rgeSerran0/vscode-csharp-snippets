@@ -62,6 +62,8 @@ linq_distinct
 linq_where
 lock
 main
+method
+method_async
 msgbox
 mstest
 namespace
@@ -105,11 +107,16 @@ ac_csproj_2.0
 ac_csproj_2.1
 ac_csproj_3.1
 ac_csproj_5
-ac_rz_code
-ac_rz_comment
-ac_rz_for
-ac_rz_raw
 ac_startupenv
+```
+
+### ASP.NET Core Web Api C# snippets
+```csharp
+api_controller
+api_delete
+api_get
+api_put
+api_post
 ```
 
 ### .NET Extensions
@@ -129,7 +136,32 @@ gRPC_server_program
 gRPC_server_service
 gRPC_server_settings
 gRPC_server_startup
-```
+
+### ASP.NET Core Razor C# snippets
+```csharp
+rz_code
+rz_comment
+rz_directive
+rz_dowhile
+rz_for
+rz_foreach
+rz_functions
+rz_if
+rz_ifelse
+rz_implements
+rz_inherits
+rz_inject
+rz_model
+rz_namespace
+rz_raw
+rz_renderbody
+rz_switch
+rz_try
+rz_using
+rz_viewbag
+rz_viewdata
+rz_while
+``````
 
 ### XML Comments snippets
 ```csharp

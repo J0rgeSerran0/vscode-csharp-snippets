@@ -5,6 +5,44 @@
 
 
 
+## [1.1.0] (2020-12-04)
+
+```
+ New Snippets
+```
+  - `[api_controller]` :: Creates the base of a controller
+  - `[api_delete]` :: Creates the Delete Action of the WebApi
+  - `[api_get]` :: Creates the Get Action of the WebApi
+  - `[api_put]` :: Creates the Put Action of the WebApi
+  - `[api_post]` :: Creates the Post Action of the WebApi
+  - `[method]` :: Creates a Method structure
+  - `[method_async]` :: Creates an Async Method structure
+  - `[rz_code]` :: Creates a code block for Razor
+  - `[rz_if]` :: Creates an if statement for Razor
+  - `[rz_iflese]` :: Creates an if else statement for Razor
+  - `[rz_implements]` :: Implements an interface for Razor
+  - `[rz_inherits]` :: Creates an inherits directive for Razor
+  - `[rz_inject]` :: Creates an inject directive for Razor
+  - `[rz_foreach]` :: Creates a foreach statement for Razor
+  - `[rz_functions]` :: Creates a functions block for Razor
+  - `[rz_model]` :: Specifies the model to use for Razor
+  - `[rz_namespace]` :: Specifies the namespace to use for Razor
+  - `[rz_renderbody]` :: Creates a RenderBody for Razor
+  - `[rz_switch]` :: Creates a switch statement for Razor
+  - `[rz_try]` :: Creates a try catch finally for Razor
+  - `[rz_using]` :: Creates an using statement for Razor
+  - `[rz_viewbag]` :: Creates a ViewBag for Razor
+  - `[rz_viewdata]` :: Creates a ViewData for Razor
+  - `[rz_while]` :: Creates a while loop for Razor
+```
+ Renamed
+```
+  - `[ac_rz_code]` to `[rz_directive]` :: Creates a directive block for Razor
+  - `[ac_rz_comment]` to `[rz_comment]` :: Creates a comment block for Razor
+  - `[ac_rz_for]` to `[rz_for]` :: Creates a for statement for Razor
+  - `[ac_rz_raw]` to `[rz_raw]` :: Creates a HTML markup for Razor
+
+
 ## [1.0.2] (2020-11-22)
 
 ```
