@@ -136,6 +136,7 @@ gRPC_server_program
 gRPC_server_service
 gRPC_server_settings
 gRPC_server_startup
+```
 
 ### ASP.NET Core Razor C# snippets
 ```csharp
@@ -161,7 +162,7 @@ rz_using
 rz_viewbag
 rz_viewdata
 rz_while
-``````
+```
 
 ### XML Comments snippets
 ```csharp
