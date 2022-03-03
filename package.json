@@ -46,7 +46,11 @@
             {
                 "language": "csharp",
                 "path": "./snippets/csharp.json"
-            }
+            },
+			{
+				"language": "dotnet-interactive.csharp",
+				"path": "./snippets/csharp.json"
+			}
         ]
     }
 }
