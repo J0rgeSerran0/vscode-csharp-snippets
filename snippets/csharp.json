@@ -416,7 +416,7 @@
 			"\tpublic $2 $6 { get; set; }",
 			"\tpublic $4 $7 { get; set; }",
 			"",
-			"public void Deconstructor(out $2 $3, out $4 $5) => ($3, $5) = ($6, $7);",
+			"\tpublic void Deconstructor(out $2 $3, out $4 $5) => ($3, $5) = ($6, $7);",
 			"}"
 			],
 		"description": "Creates a record type with deconstructor"
@@ -431,7 +431,7 @@
 			"\tpublic $2 $6 { get; set; }",
 			"\tpublic $4 $7 { get; set; }",
 			"",
-			"public void Deconstructor(out $2 $3, out $4 $5) => ($3, $5) = ($6, $7);",
+			"\tpublic void Deconstructor(out $2 $3, out $4 $5) => ($3, $5) = ($6, $7);",
 			"}"
 			],
 		"description": "Creates a record struct type with deconstructor"
