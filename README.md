@@ -79,6 +79,7 @@ singletonl
 singletonts
 struct
 switch
+switche
 tls
 todo
 try

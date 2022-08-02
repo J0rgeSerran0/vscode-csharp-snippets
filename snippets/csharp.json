@@ -493,6 +493,18 @@
 			],
 		"description": "Creates a switch statement"
 	},
+	"Creates a switch expression": {
+		"prefix": "switche",
+		"body": [
+		  "${1:value} switch",
+		  "{",
+		  "\t${2:value1} => ${3:value2},",
+		  "\t_ => default,",
+		  "};",
+		  "$0"
+		],
+		"description": "Creates a switch expression"
+	},
 	"Creates a C# 9 top-level statement": {
 		"prefix": "tls",
 		"body": [
