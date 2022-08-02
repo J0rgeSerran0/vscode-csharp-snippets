@@ -388,35 +388,35 @@
 	"Creates a record type":{
 		"prefix": "record",
 		"body": [
-			"public record Person(${1:string} ${2:Name});"
+			"public record ${1:MyRecord}(${2:string} ${3:Name});"
 			],
 		"description": "Creates a record type"
 	},
 	"Creates a record struct type":{
 		"prefix": "records",
 		"body": [
-			"public record struct Person(${1:string} ${2:Name});"
+			"public record struct ${1:MyRecord}(${2:string} ${3:Name});"
 			],
 		"description": "Creates a record struct type"
 	},
 	"Creates a readonly record struct type":{
 		"prefix": "recordsr",
 		"body": [
-			"public readonly record struct Person(${1:string} ${2:Name});"
+			"public readonly record struct ${1:MyRecord}(${2:string} ${3:Name});"
 			],
 		"description": "Creates a readonly record struct type"
 	},
 	"Creates a record type with deconstructor":{
 		"prefix": "recordd",
 		"body": [
-			"public record Person",
+			"public record ${1:MyRecord}",
 			"{",
-			"\tpublic Person(${1:string} ${2:name}, ${3:int} ${4:age}) => (${5:Name}, ${6:Age}) = ($2, $4);",
+			"\tpublic ${1:MyRecord}(${2:string} ${3:name}, ${4:int} ${5:age}) => (${6:Name}, ${7:Age}) = ($3, $5);",
 			"",
-			"\tpublic $1 $5 { get; set; }",
-			"\tpublic $3 $6 { get; set; }",
+			"\tpublic $2 $6 { get; set; }",
+			"\tpublic $4 $7 { get; set; }",
 			"",
-			"public void Deconstructor(out $1 $2, out $3 $4) => ($2, $4) = ($5, $6);",
+			"public void Deconstructor(out $2 $3, out $4 $5) => ($3, $5) = ($6, $7);",
 			"}"
 			],
 		"description": "Creates a record type with deconstructor"
@@ -424,17 +424,17 @@
 	"Creates a record struct type with deconstructor":{
 		"prefix": "recordsd",
 		"body": [
-			"public record struct Person",
+			"public record struct ${1:MyRecord}",
 			"{",
-			"\tpublic Person(${1:string} ${2:name}, ${3:int} ${4:age}) => (${5:Name}, ${6:Age}) = ($2, $4);",
+			"\tpublic ${1:MyRecord}(${2:string} ${3:name}, ${4:int} ${5:age}) => (${6:Name}, ${7:Age}) = ($3, $5);",
 			"",
-			"\tpublic $1 $5 { get; set; }",
-			"\tpublic $3 $6 { get; set; }",
+			"\tpublic $2 $6 { get; set; }",
+			"\tpublic $4 $7 { get; set; }",
 			"",
-			"public void Deconstructor(out $1 $2, out $3 $4) => ($2, $4) = ($5, $6);",
+			"public void Deconstructor(out $2 $3, out $4 $5) => ($3, $5) = ($6, $7);",
 			"}"
 			],
-		"description": "Creates a record type with deconstructor"
+		"description": "Creates a record struct type with deconstructor"
 	},
 	"Creates a singleton class": {
 		"prefix": "singleton",
