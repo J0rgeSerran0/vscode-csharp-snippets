@@ -74,11 +74,16 @@ propr
 pum
 pvm
 record
+recordd
+records
+recordsd
+recordsr
 singleton
 singletonl
 singletonts
 struct
 switch
+switche
 tls
 todo
 try
